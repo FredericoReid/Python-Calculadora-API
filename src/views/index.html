@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <style>
+        #container1 {
+          margin-top: 15%;
+          margin-left: 15%;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+    <div class="text-dark p-5 h-50" style="width:100vh; height: 100vh;" >
+        <div class="row container border p-4 bg-white" id="container1">
+            <h1 class="display-6">Calculadora</h1>
+            <hr/>
+            <form action="" method="POST">
+                <input class="col-5" type="number" placeholder="Digite o primeiro número" name="n1" class="form-control my-3">
+                <input class="col-5" type="number" placeholder="Digite o segundo número" name="n2" class="form-control my-3">
+                <br><br>
+
+                <div class="col-12">
+                    <input type="radio" name="opc" id="soma" value="soma" checked>
+                    <label for="soma">Soma</label>
+                    
+                    <input type="radio" name="opc" id="subtracao" value="subtracao">
+                    <label for="soma">Subtração</label>
+                
+                    <input type="radio" name="opc" id="multiplicacao" value="multiplicacao">
+                    <label for="soma">Multiplicação</label>
+                    
+                    <input type="radio" name="opc" id="divisao" value="divisao">
+                    <label for="soma">Divisão</label>
+                </div>
+                
+                <br/>
+                <button class="btn btn-primary">Calcular</button>
+
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
